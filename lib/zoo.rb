@@ -37,9 +37,7 @@ class Zoo
       greetings += "#{employee.greet}\n"
     end
     @cages.each do |cage|
-      unless cage.animal.nil?
-        greetings += "#{cage.animal.speak}\n"
-      end
+      greetings += "#{cage.animal.speak}\n" if cage.animal
     end
     greetings
   end
