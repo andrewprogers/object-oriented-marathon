@@ -73,6 +73,7 @@ RSpec.describe Zoo do
       zoo.add_employee(vince)
       zoo.add_animal(gorilla)
       zoo.add_animal(fox)
+      #binding.pry
       zoo
     end
 
